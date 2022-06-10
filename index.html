@@ -12,13 +12,21 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WEBGL_EverywhereIsTheOcean.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
+  <body style = "background-color: black">
     <div class="webgl-content">
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Everywhere Is The Ocean</div>
+
+
+        <div id="navs"><navbar class="w3-bar w3-black">
+		<a href="flfly.github.io/index.html">home</a>
+		<a href="projects.html" class="w3-button w3-bar-item">portfolio</a>
+		<a href="about.html">about</a>
+		<a href="connect.html" class="w3-button w3-bar-item">contact</a>
+		</navbar></div>
+        <!-- <div class="title">Everywhere Is The Ocean</div> -->
       </div>
     </div>
   </body>
