@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 .webgl-content * {border: 0; margin: 0; padding: 0}
 .webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 
@@ -16,3 +19,72 @@
 .webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen background-image: url('fullscreen.png'); width: 38px; float: right;
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+a{
+box-shadow: inset 1 1 0 0 #54b3d6;
+color: #54b3d6;
+padding: 0 .25rem;
+margin: 0 .25rem;
+transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover {  color: #fff;
+  box-shadow: inset 1500px 0 0 0 #54b3d6;
+}
+a:active { text-decoration: none; }
+
+.nav-container {
+  display: flex;
+  position: absolute;
+  top: 95%;
+  right: 32%;
+  font-size: 18px;
+  color: white;
+  font-family: 'Montserrat';
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;
+}
+
+.navbarText {
+  color: white;
+  animation: 4s anim-lineUp ease-out;
+}
+
+.aboutproject-container{
+  display: flex;
+  position: absolute;
+  top: 90%;
+  font-size: 18px;
+  color: white;
+  font-family: 'Montserrat';
+  width: 100%;
+  text-align: left;
+  z-index: 100;
+  display:block;
+}
