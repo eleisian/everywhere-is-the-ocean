@@ -2,7 +2,7 @@
 
 
 .webgl-content * {border: 0; margin: 0; padding: 0}
-.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content {position: absolute; top: 40%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .webgl-content .logo {background: url('progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
@@ -77,20 +77,20 @@ a:active { text-decoration: none; }
 }
 
 .aboutproject-container{
-  overflow-wrap: break-word;
-display: flex;
-inline-size: 150px;
-top:90%;
-position: absolute;
-color: white;
-font-size: 18px;
-font-family: 'Montserrat', sans-serif;
-font-weight: 100;
-width: 100%;
-z-index: 100;
-display:block;
+  height: 10em;
+  position: relative;
 }
 
 .aboutproject-child{
-  text-align: center;
+    margin: 0;
+    text-align: center;
+    max-width: 980px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 500%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
