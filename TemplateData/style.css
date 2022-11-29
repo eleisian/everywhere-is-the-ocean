@@ -77,14 +77,20 @@ a:active { text-decoration: none; }
 }
 
 .aboutproject-container{
-  display: flex;
-  position: absolute;
-  top: 90%;
-  font-size: 18px;
-  color: white;
-  font-family: 'Montserrat';
-  width: 80%;
+  overflow-wrap: break-word;
+display: flex;
+inline-size: 150px;
+top:90%;
+position: absolute;
+color: white;
+font-size: 18px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 100;
+width: 100%;
+z-index: 100;
+display:block;
+}
+
+.aboutproject-child{
   text-align: center;
-  z-index: 100;
-  display:block;
 }
