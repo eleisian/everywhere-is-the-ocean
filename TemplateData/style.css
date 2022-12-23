@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 
 
 .webgl-content * {border: 0; margin: 0; padding: 0}
@@ -64,7 +65,7 @@ a:active { text-decoration: none; }
   right: 32%;
   font-size: 18px;
   color: white;
-  font-family: 'Montserrat';
+  font-family: 'Inconsolata', monospace;
 	width: 100%;
 	text-align: center;
 	z-index: 100;
@@ -87,7 +88,7 @@ a:active { text-decoration: none; }
     max-width: 980px;
     font-size: 18px;
     color: white;
-    font-family: 'Montserrat';
+    font-family: 'Inconsolata', monospace;
     position: absolute;
     top: 500%;
     left: 50%;
